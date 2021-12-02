@@ -1,3 +1,5 @@
+data_path = "/Users/ew/Library/Mobile Documents/com~apple~CloudDocs/Projects/advent_2021/data/day1.txt"
+
 test_input = [
     199,
     200,
@@ -43,19 +45,19 @@ def count_increases(input_list):
 
 
 def main():
-    input_list = read_input("input.txt")
+    input_list = read_input(data_path)
     result = count_increases(map_to_runs(input_list))
-    print(f"Result: {result}")
+    print(f"Day 1.2: {result}")
 
 
 def test():
     result = count_increases(map_to_runs(test_input))
     if result != 5:
-        print(f"Test Failed - result: {result} should be 7")
+        print(f"Day 1.2 Test Failed - result: {result} should be 7")
     else:
-        print(f"Test succeeded, result: {result}")
+        print(f"Day 1.2 Test succeeded, result: {result}")
 
 
 if __name__ == "__main__":
-    test()
+    # test()
     main()
