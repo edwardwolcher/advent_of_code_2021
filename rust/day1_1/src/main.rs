@@ -1,9 +1,10 @@
 use std::fs;
 
+pub const DATA_PATH: &str =
+    "/Users/ew/Library/Mobile Documents/com~apple~CloudDocs/Projects/advent_2021/data/day1.txt";
+
 fn main() {
-    let data_path =
-        "/Users/ew/Library/Mobile Documents/com~apple~CloudDocs/Projects/advent_2021/data/day1.txt";
-    let input_list = read_input(data_path);
+    let input_list = read_input(DATA_PATH);
     let increases = count_increases(input_list);
     print!("Day 1 part One: {}\n", increases);
 }
