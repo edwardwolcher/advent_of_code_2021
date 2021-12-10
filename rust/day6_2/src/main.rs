@@ -33,9 +33,7 @@ fn iterate(population: &mut Vec<usize>) {
 
 #[cfg(test)]
 mod tests {
-    use crate::iterate;
-
-    use crate::parse_input;
+    use crate::{iterate, parse_input};
 
     #[test]
     fn day6_2_test() {
