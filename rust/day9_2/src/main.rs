@@ -1,3 +1,6 @@
+// Note, this solution is copied from Timvisee's excellent Rust solutions to this year's advent at https://github.com/timvisee/advent-of-code-2021/blob/master/day08b/src/main.rs
+// I will study the solution to improve my style.
+
 const NEXT: [(isize, isize); 4] = [(0, -1), (0, 1), (-1, 0), (1, 0)];
 
 pub fn main() {
